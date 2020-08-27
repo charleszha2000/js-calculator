@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(40, 100, 120);
+}
+
+#main {
+    background-color: rgb(180, 180, 180);
+    height:640px;
+    width: 460px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:2%;
+    border-style:solid;
+    border-color:black;
+    display: grid;
+    grid-template-rows: 120px 520px;
+}
+
+#display {
+    width: 460px;
+    background-color: rgb(40, 40 ,40);
+    height:120px;
+    border-color:black;
+    border-radius: 2%;
+    border-width: 2px;
+    text-align: end;
+    text-justify: center;
+    color: white;
+    font-size:96px;
+    font-family: Arial;
+}
+
+#keypad {
+    background-color:lightsteelblue;
+    width:460px;
+    height:522px;
+    margin-top: -2px;
+    border-bottom-style:solid;
+    border-color:black;
+    border-radius:2%;
+    display:grid;
+    grid-template-areas:
+    "+ - * /"
+    "1 2 3 ^"
+    "4 5 6 ="
+    "7 8 9 ="
+    "0 dot C <-";
+}
+
+button {
+    font-family: Arial;
+    color:black;
+    background-color: whitesmoke;
+    border:gray;
+    border-width:1px;
+}
+
+.operator{
+    color:lightseagreen;
+}
